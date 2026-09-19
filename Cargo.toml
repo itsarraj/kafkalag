@@ -1,0 +1,24 @@
+[package]
+name = "kafkalag"
+version = "0.1.0"
+edition = "2021"
+description = "Report Kafka consumer-group lag over the raw wire protocol — no JVM, no Kafka distribution"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/kafkalag"
+readme = "README.md"
+keywords = ["kafka", "consumer-group", "lag", "offsets", "monitoring"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "kafkalag"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kafkalag"
+path = "src/main.rs"
+
+[dependencies]
+bytes = "1"
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
