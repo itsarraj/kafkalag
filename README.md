@@ -12,6 +12,12 @@ kafkalag speaks the Kafka wire protocol directly. No Kafka distribution, no
 JVM, and no existing Kafka client crate underneath it — the whole thing is
 `src/`, about 1,700 lines excluding tests.
 
+## Installation
+
+```sh
+cargo install --path .
+```
+
 ## Usage
 
 ```bash
